@@ -140,7 +140,7 @@ while True:
       address = socket.gethostbyname(hostname)
       # Connect to the origin server
       # ~~~~ INSERT CODE ~~~~
-      originServerSocket.connect((address, 80))
+      pass
       # ~~~~ END CODE INSERT ~~~~
       print ('Connected to origin Server')
 
@@ -152,8 +152,12 @@ while True:
       # originServerRequestHeader is the second line in the request
       # ~~~~ INSERT CODE ~~~~
       lines = message.split('\n')
-      originServerRequest = lines[0]
-      originServerRequestHeader = lines[1]
+      originServerRequest = lines[0]  # 第一行请求
+      originServerRequestHeader = ''
+      for line in lines[1:]:
+        if line.strip() == '':
+          break
+        originServerRequestHeader += line + '\r\n'
       # ~~~~ END CODE INSERT ~~~~
 
       # Construct the request to send to the origin server
