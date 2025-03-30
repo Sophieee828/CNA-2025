@@ -151,8 +151,8 @@ while True:
       # originServerRequest is the first line in the request and
       # originServerRequestHeader is the second line in the request
       # ~~~~ INSERT CODE ~~~~
+      originServerRequest = f"GET {resource} HTTP/1.1"
       lines = message.split('\n')
-      originServerRequest = lines[0]
       originServerRequestHeader = ''
       for line in lines[1:]:
         if line.strip() == '':
