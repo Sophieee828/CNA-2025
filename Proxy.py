@@ -152,12 +152,14 @@ while True:
       # originServerRequestHeader is the second line in the request
       # ~~~~ INSERT CODE ~~~~
       lines = message.split('\n')
-      originServerRequest = lines[0]  # 第一行请求
+      originServerRequest = lines[0]
       originServerRequestHeader = ''
       for line in lines[1:]:
         if line.strip() == '':
           break
         originServerRequestHeader += line + '\r\n'
+      if 'Connection:' not in originServerRequestHeader:
+        originServerRequestHeader += 'Connection: close\r\n'
       # ~~~~ END CODE INSERT ~~~~
 
       # Construct the request to send to the origin server
