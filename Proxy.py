@@ -3,6 +3,7 @@ import socket
 import sys
 import os
 import argparse
+import re
 
 # 1MB buffer size
 BUFFER_SIZE = 1000000
