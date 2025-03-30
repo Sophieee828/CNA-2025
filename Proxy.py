@@ -152,14 +152,10 @@ while True:
       # originServerRequestHeader is the second line in the request
       # ~~~~ INSERT CODE ~~~~
       originServerRequest = f"GET {resource} HTTP/1.1"
-      lines = message.split('\n')
-      originServerRequestHeader = ''
-      for line in lines[1:]:
-        if line.strip() == '':
-          break
-        originServerRequestHeader += line + '\r\n'
-      if 'Connection:' not in originServerRequestHeader:
-        originServerRequestHeader += 'Connection: close\r\n'
+      originServerRequestHeader = f"Host: {hostname}\r\n"
+      originServerRequestHeader += "User-Agent: curl/8.4.0\r\n"
+      originServerRequestHeader += "Accept: */*\r\n"
+      originServerRequestHeader += "Connection: close\r\n"
       # ~~~~ END CODE INSERT ~~~~
 
       # Construct the request to send to the origin server
