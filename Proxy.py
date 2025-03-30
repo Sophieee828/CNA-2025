@@ -20,8 +20,6 @@ try:
   # Create a server socket
   # ~~~~ INSERT CODE ~~~~
   serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  serverSocket.bind((proxyHost, proxyPort))
-  serverSocket.listen(5)
   # ~~~~ END CODE INSERT ~~~~
   print ('Created socket')
 except:
