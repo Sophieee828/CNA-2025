@@ -1,0 +1,9 @@
+67d7340 Added .gitignore to exclude test output and cache folders
+e7805e1 Bug: Image, Reconstruction of HTTP request to ensure correct Host header and stable origin server communication
+9c0cbf8 Second Attempt on resource in GET request to origin server
+3c9e64d Fixed 400 error by reconstructing full HTTP headers and adding Connection: close
+65e81e5 Avoided reconnecting already connected socket by replacing second connect() with pass"
+d6b4f6e Bug: name 're' is not defined, Imported re
+ffa8fee Bug: Could not connect to Proxy, Removed duplicate bind() and listen() calls to prevent socket error
+5cccb0f Add files via upload
+4967536 Initial commit
