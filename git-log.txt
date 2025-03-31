@@ -1,0 +1,53 @@
+commit 67d73406b53a7dc469f4609bf6857f43d9c5f1ed
+Author: a1911139 <yufei.sun@student.adelaide.edu.au>
+Date:   Mon Mar 31 06:19:14 2025 +1030
+
+    Added .gitignore to exclude test output and cache folders
+
+commit e7805e13942b3baffee7b41b0a00aad100fcbd6d
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 05:24:30 2025 +1030
+
+    Bug: Image, Reconstruction of HTTP request to ensure correct Host header and stable origin server communication
+
+commit 9c0cbf8293d7f272d178bbb5d2f4cf9bc85594cf
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 04:48:59 2025 +1030
+
+    Second Attempt on resource in GET request to origin server
+
+commit 3c9e64dd89ea792440dc8fd89be0e251938e3024
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 04:41:42 2025 +1030
+
+    Fixed 400 error by reconstructing full HTTP headers and adding Connection: close
+
+commit 65e81e567fc216d2e78c4e9dcb7f4d492fe22a2a
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 04:33:52 2025 +1030
+
+    Avoided reconnecting already connected socket by replacing second connect() with pass"
+
+commit d6b4f6e0b680b9a6a4d410ffba1a2f2ce8396b17
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 03:51:54 2025 +1030
+
+    Bug: name 're' is not defined, Imported re
+
+commit ffa8fee4c5267937126dc52afa7e500b0d0f4fd3
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 03:30:06 2025 +1030
+
+    Bug: Could not connect to Proxy, Removed duplicate bind() and listen() calls to prevent socket error
+
+commit 5cccb0fd782ddc2b1ba44e62773543b7e1ba1220
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 03:18:25 2025 +1030
+
+    Add files via upload
+
+commit 4967536ae4458f9de4cf7187c4483bff440e0682
+Author: Sophieee828 <161807691+Sophieee828@users.noreply.github.com>
+Date:   Mon Mar 31 03:18:04 2025 +1030
+
+    Initial commit
